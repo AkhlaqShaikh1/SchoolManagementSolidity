@@ -24,19 +24,6 @@
 				"type": "event"
 			},
 			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					}
-				],
-				"name": "StudentInf",
-				"type": "event"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -65,16 +52,38 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "showAllStudents",
+				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
+						"components": [
+							{
+								"internalType": "string",
+								"name": "studentName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "studentId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "grade",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "batch",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct SchoolManagement.StudentInformation[]",
+						"name": "student",
+						"type": "tuple[]"
 					}
 				],
-				"name": "showStudents",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -114,11 +123,19 @@
 			]
 		},
 		"contracts/school_management.sol": {
-			"keccak256": "0x58cb3df1e289e1ab19e76b65ea5761552f6dc17b48b425c7b597dc8e5f7c98d9",
+			"keccak256": "0x3dabebdfa071b125bd7eaa765b536649b125dad845cc7989e7dd6e9030a8683a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6bee8ef0f9b16858f26e6a789f52764d135c07070c1bcc0199b2ee85f9e7045a",
-				"dweb:/ipfs/QmTa42zUPRHVg9qKX5e8cHBebqPu8ADCrU27BHC5xRJYaU"
+				"bzz-raw://65a1836d7f92e311ae35d8365f5e53b42b39a0b9f121d84bf888f0774aa97ba4",
+				"dweb:/ipfs/QmezQtRD2YNR1yXoL8gczhjaNhipeFJhP1QkJQaj167BVj"
+			]
+		},
+		"hardhat/console.sol": {
+			"keccak256": "0x7434453e6d3b7d0e5d0eb7846ffdbc27f0ccf3b163591263739b628074dc103a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://49355f780520494d1d5a0f01858385e51bb5280ce0ecfb960f16995065dca395",
+				"dweb:/ipfs/QmSwJ6C5QLz6xKeQZS8wbwjU1KxRFTYfwbGmtzisd5sRW4"
 			]
 		}
 	},
