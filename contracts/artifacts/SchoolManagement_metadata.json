@@ -1,0 +1,126 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "StudentAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "StudentInf",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "grade",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "batch",
+						"type": "uint256"
+					}
+				],
+				"name": "addStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "showStudents",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/school_management.sol": "SchoolManagement"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/modifiers.sol": {
+			"keccak256": "0x02cf1c6652ea513751d160686760ba931a209b639f464bc97b8491141d461648",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://81f1558b6350c59dec92782f504639f8c5678ec5d4f4d23b716d0fc83eb449db",
+				"dweb:/ipfs/QmWcD2HKjCMk8c7nQXaQiJEt8VxdD5uBFjbfgofNjq89Xr"
+			]
+		},
+		"contracts/school_management.sol": {
+			"keccak256": "0x58cb3df1e289e1ab19e76b65ea5761552f6dc17b48b425c7b597dc8e5f7c98d9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6bee8ef0f9b16858f26e6a789f52764d135c07070c1bcc0199b2ee85f9e7045a",
+				"dweb:/ipfs/QmTa42zUPRHVg9qKX5e8cHBebqPu8ADCrU27BHC5xRJYaU"
+			]
+		}
+	},
+	"version": 1
+}
